@@ -1,0 +1,15 @@
+:root{
+    /* color */
+    --primary--color:#1D4D4F;
+    --secondary--color:#285F43;
+
+    /* font */
+    --font-size-small:12px;
+    --font-size-normar:16px;
+    --font-size-large:20px;
+
+}
+.box > .button{
+    background-color: var(--primary--color);
+    font-size: var(--font-size-small);
+}

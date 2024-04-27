@@ -1,0 +1,10 @@
+.container{
+    display: grid;
+}
+.box{
+    border: 1px solid black;
+    background-color: skyblue;
+    width: 100px;
+    height: 100px;
+
+}

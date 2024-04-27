@@ -1,0 +1,34 @@
+main{
+    margin-top: 220px;
+    width: 100vw;
+}
+.hospital{
+    width: 100%;
+    max-width: var(--max-width);
+
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+.card{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid var(--color-grey);
+    border-radius: 10px;
+    padding:10px;
+}
+.card__info{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.card__image{
+    width: 80px;
+    height: 80px;
+}
+.card__image > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

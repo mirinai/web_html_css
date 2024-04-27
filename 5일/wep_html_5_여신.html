@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>동영상</title>
+</head>
+<style>
+body{
+        line-height: 1;
+    }
+body{
+        margin: 0;
+        padding: 0;
+        border: 0;
+
+        font: inherit;
+        vertical-align: baseline;
+    }
+body{
+        display: block;
+        unicode-bidi: isolate;
+    }
+main{
+        width: 100vw;
+        display: block;
+        unicode-bidi: isolate;
+    }
+div{
+        margin: 0;
+        padding: 0;
+        border: 0;
+        
+        font: inherit;
+        vertical-align: baseline;
+    }
+
+video {
+        object-fit: contain;
+        overflow-clip-margin: content-box;
+        overflow: clip;
+    }
+.video-bg video {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+.logo-box > img {
+        width: 188px;
+        height: 42px;
+        object-fit: cover;
+    }
+.home{
+        width: 1024px;
+        display: flex;
+        justify-content: end;
+        flex-direction: column;
+        margin-left: 25%;
+    }
+.home > .first-text{
+        font-size: 62px;
+        line-height: 73px;
+        color: black;
+        font-weight: 600;
+        margin-bottom: 16px;
+    }
+.home > .second-text {
+    font-size: 34px;
+    line-height: 41px;
+    color: black;
+    font-weight: 600;
+    margin-bottom: 60px;
+}
+
+.download-buttons-box {
+    display: flex;
+    gap: 15px;
+}
+.download-button{
+    width: 204px;
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0.2);
+    font-family: 'Pretendard-Regular';
+    font-size: 18px;
+    color: white;
+    border-radius: 50px;
+    border: white solid 1px;
+    padding: 14px 16px;
+}
+.fa-brands{
+    font-weight: 400;
+}
+</style>
+<body>
+    <main>
+        <div class="video-bg">
+            <video muted autoplay loop>
+                <source src="video/island.mp4" type="video/mp4">
+            </video>
+            <header>
+                <div class="logo-box">
+                    <img src="#" alt="여신티켓 로고 이미지">
+                </div>
+                <div class="button-box">
+                    <button class="top-button">입점문의</button>
+                </div>
+            </header>
+            <section class="home">
+                
+                <div class="first-text">
+                    <p>피부과를 고르는</p>
+                    <br>
+                    <span>확실한 기준</span>
+                </div>
+                <div class="second-text">
+                    <p>지금 가입하면</p>
+                    <br>
+                    <p>"7000p + 확실한 혜택"</p>
+                </div>
+                <div class="download-buttton-box">
+                    <button class="download-button">
+                        <i class="fa-brands fa-apple fa-2xl">
+                            <p>APP STORE</p>
+                        </i>
+                    </button>
+                    <button class="download-button">
+                        <button class="download-button">
+                            <i class="fa-brands fa-google-play fa-2xl">
+                                <p>GOOGLE PLAY</p>
+                            </i>
+                    </button>
+
+                </div>
+            </section>
+
+        </div>
+    </main>
+    
+    
+</body>
+</html>

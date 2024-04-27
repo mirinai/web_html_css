@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+:root {
+    --font-primary:"Pretendard-Regular";
+
+    /* width*/
+    --max-width:1200px;
+
+    --font-large:24px;
+
+    /* border */
+    --border-button : 1px solid rgba(120,135,153,0.5);
+    --border-button-radius :10px;
+
+    /* color */
+    --color-grey:rgba(128,135,153,0.15)
+
+
+}
