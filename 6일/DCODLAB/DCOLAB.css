@@ -1,0 +1,33 @@
+header{
+    width: 100vw;
+    position: fixed;
+    top: 0px;
+    background-color: var(--color-white);
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+}
+nav{
+    width: 100%;
+    max-width: var( --width-max);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--font-primary);
+}
+
+nav > ul{
+    display: flex;
+    
+
+}
+nav > ul > li{
+    padding:20px 40px;
+    transition: all 0.5s;
+   
+
+}
+nav > ul > li:hover{
+    background-color: #555;
+    color:#fff
+}

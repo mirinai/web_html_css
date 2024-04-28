@@ -1,0 +1,185 @@
+header{
+    width: 100vw;
+    height: 61px;
+    position: fixed;
+    top: 0px;
+    background-color: white;
+    z-index: 1;
+}
+.nav{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    width: 100%;
+    max-width: var(--width-max);
+    margin:0 auto;
+
+}
+.nav h1 a:hover {
+    cursor: pointer;
+}
+.nav > div > a{
+    font-weight: bold;
+    font-size: var(--font-size-more);
+}
+.nav > ul{
+    list-style: none;
+    display: flex;
+
+
+
+}
+.nav > ul > a{
+    color: black;
+    transition: all 0.5s;
+}
+
+.nav > ul > a{
+    padding : 20px 40px;
+    font: var(--font-size-normar);
+    font-weight: bold;
+    cursor: pointer;
+    color: #555555;
+    transition: all 0.5s;
+    
+}
+.nav > ul > a:hover{
+    background-color: #555;
+    color:#fff
+    
+}
+/*main{
+    margin-top: 61px;
+    width: 100vw;
+    height: 833px;
+    background-color: aqua;
+
+}
+main > nav{
+    width: 100%;
+    height: 100vh;
+    position: relative; 
+    overflow: hidden; 
+
+    
+}
+main > nav > video{
+    width: 100%;
+    height: calc(100vh - 61px);
+    object-fit: cover; /* 비디오 비율을 유지하면서 영역을 꽉 채움 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+*/
+
+.first{
+    
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+}
+.first > video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.75);
+    opacity: 0.9;
+}
+.first > .contents{
+    position: absolute;
+    /*top:0px;*/
+
+    /* 섹션 안의 컨텐츠 센터링 CSS*/
+    left: 0;
+    right: 0;
+    width: 100%;
+    max-width: var(--width-max);
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    font-family: var(--font-primary);
+    color:var(--color-white)
+}
+.first > .contents > h1{
+    font-size: var(--font-size-large);
+}
+.first > .contents > span{
+    color: #888;
+    font-size: var(--font-size-normar);
+}
+.first > .contents > button {
+    width: 400px; /* 버튼의 너비 */
+    height: 30px; /* 버튼의 높이 */
+    background-color: transparent; /* 배경색 투명 */
+    border: 1px solid white; /* 하얀색 테두리 */
+    color: white; /* 글자색 하얗게 */
+    font-size: var(--font-size-normal); /* 글자 크기 설정, 오타 수정 */
+    cursor: pointer; /* 마우스 오버 시 커서 변경 */
+    outline: none; /* 포커스 시 아웃라인 제거 */
+    transition: all 1s; /* 배경색 변경 애니메이션 */
+
+}
+
+.first > .contents > button:hover {
+    color: black;
+    background-color: white; /* 호버 시 배경색 변경 */
+}
+section{
+    width: 100%;
+    /*padding: 200px 0px;*/
+    
+}
+section > .inner {
+    width: 1180px;
+    margin: 0px auto;
+}
+section .inner h1 {
+    font: bold 24px / 1 var(--font-wrap);
+    color: var(--color-grey);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+section > .inner > .wrap{
+    width: 100%;
+    display: flex;
+}
+section .inner .wrap article h2 {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+section > .inner > .wrap > article{
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+section .inner .wrap article .pic {
+    width: 100%;
+    height: 120px;
+    background: #333;
+    margin-bottom: 15px;
+    position: relative;
+    overflow: hidden;
+}
+section .inner .wrap article .pic img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+section .inner .wrap article p {
+    font: 14px / 1.4 var(--font-wrap);
+    color: #777;
+    /*line-height: 1.3;*/
+}
+
