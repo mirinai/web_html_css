@@ -1,0 +1,63 @@
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+header {
+  width: 100vw;
+  height: 80px;
+}
+nav {
+  max-width: var(--maxWidth--desktop);
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* 또는 flex-start */
+  padding: 20px 0;
+}
+nav > ul {
+  display: flex;
+  list-style: none;
+  gap: 4px;
+}
+nav > ul > li {
+  padding: var(--padding--button);
+  border-radius: var(--border-radius--medium);
+  line-height: 1.25rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+nav > ul > li:hover {
+  background-color: var(--gray200);
+}
+nav > ul > li > span {
+  color: rgb(255, 81, 96);
+}
+nav > .menu-icon {
+  display: none; /* 기본적으로 아이콘 숨김 */
+}
+@media screen and (max-width: 1024px) {
+  nav {
+    max-width: var(--maxWidth--tablet);
+  }
+  nav > .menu-icon {
+    display: block; /* 작은 화면에서 아이콘 표시 */
+  }
+
+  nav > ul {
+    display: none; /* 작은 화면에서 리스트 숨김 */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    max-width: var(--maxWidth--mobile);
+  }
+}
+
+@media screen and (max-width: 320px) {
+}

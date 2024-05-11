@@ -1,0 +1,35 @@
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+.style-ecosystem {
+  margin: 0px auto;
+  padding: 100px 0;
+  width: 100%;
+}
+.style-ecosystem > .next-commerce {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.style-ecosystem > .next-commerce > p {
+  margin: 0px auto;
+  font-size: var(--font--size--large);
+  line-height: 40px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  color: rgb(117, 117, 117);
+}
+.style-ecosystem > .next-commerce > p > strong {
+  font-weight: inherit;
+
+  color: rgb(31, 31, 31);
+}
+.boxes--upper {
+  display: grid;
+}

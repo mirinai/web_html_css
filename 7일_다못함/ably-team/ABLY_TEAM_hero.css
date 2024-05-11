@@ -1,0 +1,142 @@
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  --backgroundPrimary: var(--white);
+  --backgroundSecondary: var(var(--gray50));
+  --backgroundTertiary: var(var(--gray100));
+  --backgroundPrimaryPressed: var(--gray50);
+  --backgroundSecondaryPressed: var(--gray50);
+  --backgroundTertiaryPressed: var(--gray200);
+  --backgroundAccentPressed: var(--pink600);
+  --backgroundDisabled: var(--gray50);
+  --backgroundOverlay: rgba(0, 0, 0, 0.3);
+  --backgroundAccent: var(--pink500);
+  --contentPrimary: var(--gray900);
+  --contentSecondary: var(--gray700);
+  --contentTertiary: var(--gray500);
+  --borderPrimary: var(--gray100);
+  --borderSecondary: var(--gray50);
+  --bordertTransparent: rgba(0, 0, 0, 0.08);
+}
+/* main {
+  margin-top: 8px;
+  width: 100%;
+  height: 871px;
+  position: relative;
+} */
+/* main > figure > video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+} */
+/* main > .asking {
+  display: flex;
+  flex-direction: column;
+  position: absolute; /* 절대 위치 설정 */
+/* top: 0;  */
+/* 상단에 위치 */
+/* left: 0;  */
+/* 좌측에 위치 */
+/* width: 100%;  */
+/* 부모 요소와 동일한 너비 */
+/* height: 100%;  */
+/* 부모 요소와 동일한 높이 */
+/* align-items: center;  */
+/* 가운데 정렬 */
+/* justify-content: center;  */
+/* 세로 중앙 정렬 */
+/* z-index: 1;  */
+/* 비디오보다 위에 오도록 설정 */
+/* 
+  /* 글자색을 흰색으로 설정 
+}*/
+/* .asking > h2 {
+  font-weight: 600;
+  
+  font-size: 60px;
+  line-height: normal;
+}  */
+.hero {
+  width: 100vw;
+  height: calc(100vh - 84px);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero > video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hero > .hero--jumbotron {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  color: var(--white);
+  text-align: center;
+  font-size: var(--font--size--mega);
+  font-weight: 600;
+  gap: 40px;
+  z-index: 1;
+}
+.hero > .mask {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+}
+
+/* .floating {
+  position: fixed;
+  z-index: 100;
+  width: auto;
+  right: 4rem;
+  bottom: 4rem;
+}
+.floating > .button-rect {
+  height: 50px;
+  background-color: rgb(255, 81, 96);
+  color: rgb(255, 255, 255);
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 18px;
+  border: 0px;
+  padding: 5px 10px;
+} */
+@media screen and (max-width: 1024px) {
+  /* .floating {
+    width: 100%;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    z-index: 999;
+    filter: drop-shadow(rgba(255, 81, 96, 0.5) 0px 4px 12px);
+  }
+  .floating > .button-rect {
+    width: 100%;
+    height: 3.5rem;
+    background-color: rgb(255, 81, 96);
+    color: rgb(255, 255, 255);
+    border-radius: 0.75rem;
+    font-weight: 600;
+    font-size: 1.125rem;
+  } */
+}
+@media screen and (max-width: 768px) {
+  .hero > .hero--jumbotron {
+    font-size: var(--font--size--large);
+  }
+}
+
+@media screen and (max-width: 320px) {
+}

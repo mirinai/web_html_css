@@ -1,0 +1,44 @@
+:root {
+  --white: #fff;
+  --black: #000;
+  --gray50: #f5f5f5;
+  --gray100: #eee;
+  --gray200: #dedede;
+  --gray500: #757575;
+  --gray700: #4e4e4e;
+  --gray900: #1f1f1f;
+  --pink500: #ff5160;
+  --pink600: #db3b57;
+
+  /* padding */
+  --padding--button: 14px 16px;
+  /* border-raidius*/
+  --border-radius--medium: 20px;
+  --border--radius--small: 18px;
+
+  /* max-width*/
+  --maxWidth--tablet: 628px;
+  --maxWidth--mobile: 327px;
+  --maxWidth--desktop: 1024px;
+
+  /* font-size */
+  --font--size--mega: 64px;
+  --font--size--large: 32px;
+  --font--size--small: 18px;
+}
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  font-family: "Pretendard-Regular";
+
+  /* 글의 줄 바꿈 CSS : keep-all(줃바꿈 하지마라)*/
+  word-break: keep-all;
+
+  /* 글씨 사이의 간격 */
+  letter-spacing: -0.3px;
+}
